@@ -1,0 +1,5 @@
+root         1  0.0  0.0   2260  1092 ?        Ss   12:23   0:00 tail -f /dev/null
+root       370  0.0  0.0   3880  2780 ?        Ss   12:27   0:00 bash -c cd /work/q1_pipeline && gcc -Wall -o /tmp/pipeline_ipc pipeline_ipc.c && /tmp/pipeline_ipc root /tmp/pipeline_output_sample.txt >/dev/null && head -6 /tmp/pipeline_output_sample.txt > /work/strace_logs/pipeline_output_sample.txt
+root       380  0.0  0.0   2084   892 ?        S    12:27   0:00 /tmp/pipeline_ipc root /tmp/pipeline_output_sample.txt
+root       381  0.0  0.0   6448  2476 ?        R    12:27   0:00 ps aux
+root       382  0.0  0.0   2908  1412 ?        S    12:27   0:00 grep root

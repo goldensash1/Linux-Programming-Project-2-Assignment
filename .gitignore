@@ -1,0 +1,15 @@
+# Compiled binaries
+q1_pipeline/pipeline_ipc
+q2_filecopy/copy_syscall
+q2_filecopy/copy_stdio
+q3_primes/primes_mt
+q4_search/search
+q4_search/gen_testfiles
+
+# Large generated test data / copy outputs
+q2_filecopy/testfile_*.bin
+q2_filecopy/copy_out_*.bin
+q4_search/testfiles/
+
+# OS junk
+.DS_Store

@@ -1,0 +1,6 @@
+root         1  0.0  0.0   2260  1092 ?        Ss   12:23   0:00 tail -f /dev/null
+root        42  0.0  0.0   3880  2792 ?        Ss   12:23   0:00 bash -c cd /work/q1_pipeline && strace -f -tt -e trace=process,pipe,fork,vfork,clone,execve,dup2,close,read,write,open,openat -o /work/strace_logs/q1_strace_filtered.log ./pipeline_ipc root pipeline_output.txt > /dev/null && wc -l /work/strace_logs/q1_strace_filtered.log
+root        48  0.0  0.0   3920  2848 ?        S    12:23   0:00 strace -f -tt -e trace=process,pipe,fork,vfork,clone,execve,dup2,close,read,write,open,openat -o /work/strace_logs/q1_strace_filtered.log ./pipeline_ipc root pipeline_output.txt
+root        51  0.0  0.0   2084   904 ?        S    12:23   0:00 ./pipeline_ipc root pipeline_output.txt
+root        52  0.0  0.0   6448  2472 ?        R    12:23   0:00 ps aux
+root        53  0.0  0.0   2908  1416 ?        S    12:23   0:00 grep root

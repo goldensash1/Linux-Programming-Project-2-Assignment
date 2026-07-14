@@ -1,0 +1,12 @@
+Keyword search results for "error" (threads=2, files=8)
+--------------------------------------------------------
+testfiles/log1.txt: 119730
+testfiles/log2.txt: 120585
+testfiles/log3.txt: 120451
+testfiles/log4.txt: 119834
+testfiles/log6.txt: 120492
+testfiles/log5.txt: 119974
+testfiles/log7.txt: 120168
+testfiles/log8.txt: 120280
+--------------------------------------------------------
+Completed in 0.093197 seconds using 2 thread(s)
