@@ -83,7 +83,7 @@ Run:
 Trace process creation, pipe, and file operations:
 
 ```bash
-strace -f -tt -e trace=process,pipe,fork,vfork,clone,execve,dup2,close,read,write,open,openat \
+strace -f -tt -e trace=process,pipe,pipe2,fork,vfork,clone,execve,dup2,dup3,close,read,write,open,openat \
     -o strace_logs/q1_strace_filtered.log ./q1_pipeline/pipeline_ipc root pipeline_output.txt
 ```
 

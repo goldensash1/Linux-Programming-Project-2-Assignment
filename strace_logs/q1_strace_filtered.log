@@ -1,219 +1,223 @@
-51    12:23:32.023260 execve("./pipeline_ipc", ["./pipeline_ipc", "root", "pipeline_output.txt"], 0xffffd700ff20 /* 7 vars */) = 0
-51    12:23:32.023948 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
-51    12:23:32.024082 close(3)          = 0
-51    12:23:32.024224 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
-51    12:23:32.024331 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\360u\2\0\0\0\0\0"..., 832) = 832
-51    12:23:32.024517 close(3)          = 0
-51    12:23:32.024741 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffff866b0f50) = 52
-51    12:23:32.024900 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffff866b0f50) = 53
-52    12:23:32.025098 close(3 <unfinished ...>
-51    12:23:32.025189 close(3)          = 0
-52    12:23:32.025310 <... close resumed>) = 0
-51    12:23:32.025371 close(4)          = 0
-51    12:23:32.025484 wait4(52,  <unfinished ...>
-53    12:23:32.025544 close(4)          = 0
-52    12:23:32.025697 close(4)          = 0
-53    12:23:32.025859 close(3 <unfinished ...>
-52    12:23:32.025923 execve("/usr/local/sbin/ps", ["ps", "aux"], 0xffffddf14dd8 /* 7 vars */ <unfinished ...>
-53    12:23:32.025981 <... close resumed>) = 0
-52    12:23:32.026031 <... execve resumed>) = -1 ENOENT (No such file or directory)
-53    12:23:32.026084 openat(AT_FDCWD, "pipeline_output.txt", O_WRONLY|O_CREAT|O_TRUNC, 0644 <unfinished ...>
-52    12:23:32.026156 execve("/usr/local/bin/ps", ["ps", "aux"], 0xffffddf14dd8 /* 7 vars */) = -1 ENOENT (No such file or directory)
-53    12:23:32.026440 <... openat resumed>) = 3
-52    12:23:32.026492 execve("/usr/sbin/ps", ["ps", "aux"], 0xffffddf14dd8 /* 7 vars */) = -1 ENOENT (No such file or directory)
-53    12:23:32.026636 close(3 <unfinished ...>
-52    12:23:32.026682 execve("/usr/bin/ps", ["ps", "aux"], 0xffffddf14dd8 /* 7 vars */ <unfinished ...>
-53    12:23:32.026744 <... close resumed>) = 0
-53    12:23:32.026855 execve("/usr/local/sbin/grep", ["grep", "root"], 0xffffddf14dd8 /* 7 vars */) = -1 ENOENT (No such file or directory)
-52    12:23:32.027029 <... execve resumed>) = 0
-53    12:23:32.027080 execve("/usr/local/bin/grep", ["grep", "root"], 0xffffddf14dd8 /* 7 vars */) = -1 ENOENT (No such file or directory)
-53    12:23:32.027288 execve("/usr/sbin/grep", ["grep", "root"], 0xffffddf14dd8 /* 7 vars */) = -1 ENOENT (No such file or directory)
-53    12:23:32.027484 execve("/usr/bin/grep", ["grep", "root"], 0xffffddf14dd8 /* 7 vars */ <unfinished ...>
-52    12:23:32.027690 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
-53    12:23:32.027773 <... execve resumed>) = 0
-52    12:23:32.027897 <... openat resumed>) = 3
-52    12:23:32.028294 close(3 <unfinished ...>
-53    12:23:32.028372 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
-52    12:23:32.028439 <... close resumed>) = 0
-53    12:23:32.028495 <... openat resumed>) = 3
-52    12:23:32.028543 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libprocps.so.8", O_RDONLY|O_CLOEXEC) = 3
-52    12:23:32.028758 read(3,  <unfinished ...>
-53    12:23:32.028817 close(3 <unfinished ...>
-52    12:23:32.028867 <... read resumed>"\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-53    12:23:32.028923 <... close resumed>) = 0
-53    12:23:32.029016 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libpcre.so.3", O_RDONLY|O_CLOEXEC) = 3
-53    12:23:32.029216 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-52    12:23:32.029918 close(3)          = 0
-53    12:23:32.030081 close(3 <unfinished ...>
-52    12:23:32.030149 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
-53    12:23:32.030292 <... close resumed>) = 0
-52    12:23:32.030388 <... openat resumed>) = 3
-53    12:23:32.030439 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
-52    12:23:32.030489 read(3,  <unfinished ...>
-53    12:23:32.030544 <... openat resumed>) = 3
-52    12:23:32.030655 <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\360u\2\0\0\0\0\0"..., 832) = 832
-53    12:23:32.030708 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\360u\2\0\0\0\0\0"..., 832) = 832
-52    12:23:32.031549 close(3 <unfinished ...>
-53    12:23:32.031651 close(3 <unfinished ...>
-52    12:23:32.031706 <... close resumed>) = 0
-53    12:23:32.031760 <... close resumed>) = 0
-52    12:23:32.031809 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libsystemd.so.0", O_RDONLY|O_CLOEXEC) = 3
-52    12:23:32.032024 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-52    12:23:32.033085 close(3)          = 0
-53    12:23:32.033254 openat(AT_FDCWD, "/proc/self/maps", O_RDONLY <unfinished ...>
-52    12:23:32.033329 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/liblzma.so.5", O_RDONLY|O_CLOEXEC <unfinished ...>
-53    12:23:32.033409 <... openat resumed>) = 3
-52    12:23:32.033483 <... openat resumed>) = 3
-52    12:23:32.033605 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-53    12:23:32.033789 read(3, "aaaad2520000-aaaad2546000 r-xp 0"..., 8192) = 2056
-53    12:23:32.034105 read(3, "", 6136) = 0
-53    12:23:32.034502 close(3)          = 0
-52    12:23:32.035451 close(3)          = 0
-52    12:23:32.035771 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libzstd.so.1", O_RDONLY|O_CLOEXEC) = 3
-52    12:23:32.036097 read(3,  <unfinished ...>
-53    12:23:32.036206 read(0,  <unfinished ...>
-52    12:23:32.036274 <... read resumed>"\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-52    12:23:32.037117 close(3)          = 0
-52    12:23:32.037330 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/liblz4.so.1", O_RDONLY|O_CLOEXEC) = 3
-52    12:23:32.037558 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-52    12:23:32.038483 close(3)          = 0
-52    12:23:32.038671 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libcap.so.2", O_RDONLY|O_CLOEXEC) = 3
-52    12:23:32.038843 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-52    12:23:32.039634 close(3)          = 0
-52    12:23:32.039805 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libgcrypt.so.20", O_RDONLY|O_CLOEXEC) = 3
-52    12:23:32.040013 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-52    12:23:32.040790 close(3)          = 0
-52    12:23:32.040979 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libgpg-error.so.0", O_RDONLY|O_CLOEXEC) = 3
-52    12:23:32.041173 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-52    12:23:32.041921 close(3)          = 0
-52    12:23:32.044847 openat(AT_FDCWD, "/proc/self/auxv", O_RDONLY) = 3
-52    12:23:32.045166 read(3, "!\0\0\0\0\0\0\0\0@+\264\377\377\0\0003\0\0\0\0\0\0\0p\22\0\0\0\0\0\0"..., 1024) = 336
-52    12:23:32.045357 close(3)          = 0
-52    12:23:32.045529 openat(AT_FDCWD, "/proc/sys/kernel/osrelease", O_RDONLY) = 3
-52    12:23:32.045790 read(3, "6.12.76-linuxkit\n", 1024) = 17
-52    12:23:32.045965 close(3)          = 0
-52    12:23:32.046151 openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 3
-52    12:23:32.046319 read(3, "0-9\n", 1024) = 4
-52    12:23:32.046477 close(3)          = 0
-52    12:23:32.046631 openat(AT_FDCWD, "/proc/self/auxv", O_RDONLY) = 3
-52    12:23:32.046864 read(3, "!\0\0\0\0\0\0\0\0@+\264\377\377\0\0003\0\0\0\0\0\0\0p\22\0\0\0\0\0\0"..., 1024) = 336
-52    12:23:32.047037 close(3)          = 0
-52    12:23:32.048763 openat(AT_FDCWD, "/proc/self/stat", O_RDONLY) = 3
-52    12:23:32.048950 read(3, "52 (ps) R 51 42 42 0 -1 4194304 "..., 1024) = 302
-52    12:23:32.049107 close(3)          = 0
-52    12:23:32.049464 openat(AT_FDCWD, "/dev/tty", O_RDONLY|O_NOCTTY|O_NONBLOCK) = -1 ENXIO (No such device or address)
-52    12:23:32.049766 openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 3
-52    12:23:32.050069 read(3, "110.81 1072.41\n", 8191) = 15
-52    12:23:32.050254 openat(AT_FDCWD, "/proc/sys/kernel/pid_max", O_RDONLY) = 4
-52    12:23:32.050414 read(4, "99999\n", 23) = 6
-52    12:23:32.050627 close(4)          = 0
-52    12:23:32.050937 openat(AT_FDCWD, "/proc/sys/kernel/osrelease", O_RDONLY) = 4
-52    12:23:32.051163 read(4, "6.12.76-linuxkit\n", 1024) = 17
-52    12:23:32.051311 close(4)          = 0
-52    12:23:32.051456 openat(AT_FDCWD, "/proc/meminfo", O_RDONLY) = 4
-52    12:23:32.051675 read(4, "MemTotal:        8126672 kB\nMemF"..., 8191) = 1392
-52    12:23:32.051933 openat(AT_FDCWD, "/proc", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
-52    12:23:32.052575 openat(AT_FDCWD, "/proc/1/stat", O_RDONLY) = 6
-52    12:23:32.052804 read(6, "1 (tail) S 0 1 1 0 -1 4194560 83"..., 1024) = 290
-52    12:23:32.053010 close(6)          = 0
-52    12:23:32.053179 openat(AT_FDCWD, "/proc/1/status", O_RDONLY) = 6
-52    12:23:32.053345 read(6, "Name:\ttail\nUmask:\t0022\nState:\tS "..., 1024) = 1024
-52    12:23:32.053525 read(6, "d_list:\t0\nvoluntary_ctxt_switche"..., 1024) = 68
-52    12:23:32.053693 close(6)          = 0
-52    12:23:32.054048 close(6)          = 0
-52    12:23:32.054364 close(6)          = 0
-52    12:23:32.054669 openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 6
-52    12:23:32.054900 read(6, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 494
-52    12:23:32.055079 read(6, "", 4096) = 0
-52    12:23:32.055316 close(6)          = 0
-52    12:23:32.055476 openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 6
-52    12:23:32.055780 read(6, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 922
-52    12:23:32.055934 close(6)          = 0
-52    12:23:32.056077 openat(AT_FDCWD, "/proc/1/cmdline", O_RDONLY) = 6
-52    12:23:32.056216 read(6, "tail\0-f\0/dev/null\0", 131072) = 18
-52    12:23:32.056354 read(6, "", 131054) = 0
-52    12:23:32.056486 close(6)          = 0
-52    12:23:32.056713 openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
-52    12:23:32.056856 openat(AT_FDCWD, "/proc/stat", O_RDONLY) = 6
-52    12:23:32.057062 read(6, "cpu  1634 0 659 107248 359 0 197"..., 1024) = 679
-52    12:23:32.057211 close(6)          = 0
-52    12:23:32.057420 openat(AT_FDCWD, "/proc/42/stat", O_RDONLY) = 6
-52    12:23:32.057559 read(6, "42 (bash) S 0 42 42 0 -1 4194560"..., 2048) = 302
-52    12:23:32.057700 close(6)          = 0
-52    12:23:32.057841 openat(AT_FDCWD, "/proc/42/status", O_RDONLY) = 6
-52    12:23:32.058003 read(6, "Name:\tbash\nUmask:\t0022\nState:\tS "..., 2048) = 1098
-52    12:23:32.058169 close(6)          = 0
-52    12:23:32.058319 openat(AT_FDCWD, "/proc/42/cmdline", O_RDONLY) = 6
-52    12:23:32.058458 read(6, "bash\0-c\0cd /work/q1_pipeline && "..., 131072) = 272
-52    12:23:32.058597 read(6, "", 130800) = 0
-52    12:23:32.058730 close(6)          = 0
-52    12:23:32.058936 openat(AT_FDCWD, "/proc/48/stat", O_RDONLY) = 6
-52    12:23:32.059081 read(6, "48 (strace) S 42 42 42 0 -1 4194"..., 2048) = 310
-52    12:23:32.059221 close(6)          = 0
-52    12:23:32.059358 openat(AT_FDCWD, "/proc/48/status", O_RDONLY) = 6
-52    12:23:32.059500 read(6, "Name:\tstrace\nUmask:\t0022\nState:\t"..., 2048) = 1102
-52    12:23:32.059640 close(6)          = 0
-52    12:23:32.059778 openat(AT_FDCWD, "/proc/48/cmdline", O_RDONLY) = 6
-52    12:23:32.059915 read(6, "strace\0-f\0-tt\0-e\0trace=process,p"..., 131072) = 178
-52    12:23:32.060052 read(6, "", 130894) = 0
-52    12:23:32.060182 close(6)          = 0
-52    12:23:32.060405 openat(AT_FDCWD, "/proc/51/stat", O_RDONLY) = 6
-52    12:23:32.060562 read(6, "51 (pipeline_ipc) S 48 42 42 0 -"..., 2048) = 302
-52    12:23:32.060739 close(6)          = 0
-52    12:23:32.060916 openat(AT_FDCWD, "/proc/51/status", O_RDONLY) = 6
-52    12:23:32.061132 read(6, "Name:\tpipeline_ipc\nUmask:\t0022\nS"..., 2048) = 1108
-52    12:23:32.061308 close(6)          = 0
-52    12:23:32.061473 openat(AT_FDCWD, "/proc/51/cmdline", O_RDONLY) = 6
-52    12:23:32.061641 read(6, "./pipeline_ipc\0root\0pipeline_out"..., 131072) = 40
-52    12:23:32.061814 read(6, "", 131032) = 0
-52    12:23:32.061982 close(6)          = 0
-52    12:23:32.062212 openat(AT_FDCWD, "/proc/52/stat", O_RDONLY) = 6
-52    12:23:32.062416 read(6, "52 (ps) R 51 42 42 0 -1 4194304 "..., 2048) = 302
-52    12:23:32.062568 close(6)          = 0
-52    12:23:32.062706 openat(AT_FDCWD, "/proc/52/status", O_RDONLY) = 6
-52    12:23:32.062850 read(6, "Name:\tps\nUmask:\t0022\nState:\tR (r"..., 2048) = 1098
-52    12:23:32.063002 close(6)          = 0
-52    12:23:32.063147 openat(AT_FDCWD, "/proc/52/cmdline", O_RDONLY) = 6
-52    12:23:32.063291 read(6, "ps\0aux\0", 131072) = 7
-52    12:23:32.063432 read(6, "", 131065) = 0
-52    12:23:32.063567 close(6)          = 0
-52    12:23:32.063776 openat(AT_FDCWD, "/proc/53/stat", O_RDONLY) = 6
-52    12:23:32.063928 read(6, "53 (grep) S 51 42 42 0 -1 419430"..., 2048) = 297
-52    12:23:32.064078 close(6)          = 0
-52    12:23:32.064215 openat(AT_FDCWD, "/proc/53/status", O_RDONLY) = 6
-52    12:23:32.064354 read(6, "Name:\tgrep\nUmask:\t0022\nState:\tS "..., 2048) = 1101
-52    12:23:32.064496 close(6)          = 0
-52    12:23:32.064633 openat(AT_FDCWD, "/proc/53/cmdline", O_RDONLY) = 6
-52    12:23:32.064772 read(6, "grep\0root\0", 131072) = 10
-52    12:23:32.064911 read(6, "", 131062) = 0
-52    12:23:32.065040 close(6)          = 0
-52    12:23:32.065236 close(5)          = 0
-52    12:23:32.065373 write(1, "USER       PID %CPU %MEM    VSZ "..., 988) = 988
-53    12:23:32.065485 <... read resumed>"USER       PID %CPU %MEM    VSZ "..., 98304) = 988
-52    12:23:32.065527 close(1)          = 0
-53    12:23:32.065643 read(0,  <unfinished ...>
-52    12:23:32.065687 close(2 <unfinished ...>
-53    12:23:32.065732 <... read resumed>"", 98304) = 0
-52    12:23:32.065774 <... close resumed>) = 0
-53    12:23:32.065809 write(1, "root         1  0.0  0.0   2260 "..., 915 <unfinished ...>
-52    12:23:32.065870 exit_group(0 <unfinished ...>
-53    12:23:32.065961 <... write resumed>) = 915
-52    12:23:32.066009 <... exit_group resumed>) = ?
-53    12:23:32.066055 close(1)          = 0
-52    12:23:32.066284 +++ exited with 0 +++
-51    12:23:32.066328 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 52
-53    12:23:32.066369 close(2 <unfinished ...>
-51    12:23:32.066420 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=52, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
-53    12:23:32.066460 <... close resumed>) = 0
-51    12:23:32.066508 wait4(53,  <unfinished ...>
-53    12:23:32.066545 exit_group(0)     = ?
-53    12:23:32.066745 +++ exited with 0 +++
-51    12:23:32.066785 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 53
-51    12:23:32.066825 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=53, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
-51    12:23:32.066947 openat(AT_FDCWD, "pipeline_output.txt", O_RDONLY) = 3
-51    12:23:32.067230 read(3, "root         1  0.0  0.0   2260 "..., 4096) = 915
-51    12:23:32.067346 read(3, "", 4096) = 0
-51    12:23:32.067417 close(3)          = 0
-51    12:23:32.067505 write(1, "[parent] child1 (ps aux)  pid=52"..., 1137) = 1137
-51    12:23:32.067585 exit_group(0)     = ?
-51    12:23:32.067703 +++ exited with 0 +++
+156   12:48:37.280766 execve("./pipeline_ipc", ["./pipeline_ipc", "root", "/tmp/q1_out.txt"], 0xffffc4814b10 /* 7 vars */) = 0
+156   12:48:37.281551 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+156   12:48:37.281722 close(3)          = 0
+156   12:48:37.281859 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+156   12:48:37.282000 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\360u\2\0\0\0\0\0"..., 832) = 832
+156   12:48:37.282200 close(3)          = 0
+156   12:48:37.282462 pipe2([3, 4], 0)  = 0
+156   12:48:37.282617 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffff95b4af50) = 157
+156   12:48:37.282928 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffff95b4af50) = 158
+157   12:48:37.283136 close(3 <unfinished ...>
+156   12:48:37.283185 close(3 <unfinished ...>
+157   12:48:37.283239 <... close resumed>) = 0
+156   12:48:37.283285 <... close resumed>) = 0
+156   12:48:37.283334 close(4 <unfinished ...>
+157   12:48:37.283373 dup3(4, 1, 0 <unfinished ...>
+156   12:48:37.283410 <... close resumed>) = 0
+158   12:48:37.283450 close(4 <unfinished ...>
+156   12:48:37.283494 wait4(157,  <unfinished ...>
+157   12:48:37.283524 <... dup3 resumed>) = 1
+158   12:48:37.283556 <... close resumed>) = 0
+157   12:48:37.283585 close(4 <unfinished ...>
+158   12:48:37.283614 dup3(3, 0, 0 <unfinished ...>
+157   12:48:37.283662 <... close resumed>) = 0
+158   12:48:37.283698 <... dup3 resumed>) = 0
+157   12:48:37.283726 execve("/usr/local/sbin/ps", ["ps", "aux"], 0xfffff3a58d28 /* 7 vars */ <unfinished ...>
+158   12:48:37.283769 close(3 <unfinished ...>
+157   12:48:37.283800 <... execve resumed>) = -1 ENOENT (No such file or directory)
+158   12:48:37.283830 <... close resumed>) = 0
+157   12:48:37.283857 execve("/usr/local/bin/ps", ["ps", "aux"], 0xfffff3a58d28 /* 7 vars */ <unfinished ...>
+158   12:48:37.283887 openat(AT_FDCWD, "/tmp/q1_out.txt", O_WRONLY|O_CREAT|O_TRUNC, 0644 <unfinished ...>
+157   12:48:37.283953 <... execve resumed>) = -1 ENOENT (No such file or directory)
+157   12:48:37.284033 execve("/usr/sbin/ps", ["ps", "aux"], 0xfffff3a58d28 /* 7 vars */) = -1 ENOENT (No such file or directory)
+158   12:48:37.284166 <... openat resumed>) = 3
+157   12:48:37.284206 execve("/usr/bin/ps", ["ps", "aux"], 0xfffff3a58d28 /* 7 vars */ <unfinished ...>
+158   12:48:37.284244 dup3(3, 1, 0)     = 1
+158   12:48:37.284353 close(3)          = 0
+158   12:48:37.284470 execve("/usr/local/sbin/grep", ["grep", "root"], 0xfffff3a58d28 /* 7 vars */) = -1 ENOENT (No such file or directory)
+157   12:48:37.284571 <... execve resumed>) = 0
+158   12:48:37.284654 execve("/usr/local/bin/grep", ["grep", "root"], 0xfffff3a58d28 /* 7 vars */) = -1 ENOENT (No such file or directory)
+158   12:48:37.284991 execve("/usr/sbin/grep", ["grep", "root"], 0xfffff3a58d28 /* 7 vars */) = -1 ENOENT (No such file or directory)
+158   12:48:37.285277 execve("/usr/bin/grep", ["grep", "root"], 0xfffff3a58d28 /* 7 vars */ <unfinished ...>
+157   12:48:37.285567 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+158   12:48:37.285804 <... execve resumed>) = 0
+157   12:48:37.286153 close(3)          = 0
+158   12:48:37.286311 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+157   12:48:37.286361 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libprocps.so.8", O_RDONLY|O_CLOEXEC <unfinished ...>
+158   12:48:37.286418 <... openat resumed>) = 3
+157   12:48:37.286478 <... openat resumed>) = 3
+157   12:48:37.286570 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+158   12:48:37.286734 close(3)          = 0
+158   12:48:37.286924 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libpcre.so.3", O_RDONLY|O_CLOEXEC) = 3
+158   12:48:37.287080 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+157   12:48:37.287684 close(3)          = 0
+157   12:48:37.287917 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+158   12:48:37.287976 close(3 <unfinished ...>
+157   12:48:37.288129 <... openat resumed>) = 3
+158   12:48:37.288175 <... close resumed>) = 0
+157   12:48:37.288234 read(3,  <unfinished ...>
+158   12:48:37.288281 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+157   12:48:37.288341 <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\360u\2\0\0\0\0\0"..., 832) = 832
+158   12:48:37.288390 <... openat resumed>) = 3
+158   12:48:37.288489 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\360u\2\0\0\0\0\0"..., 832) = 832
+157   12:48:37.289000 close(3)          = 0
+158   12:48:37.289149 close(3 <unfinished ...>
+157   12:48:37.289199 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libsystemd.so.0", O_RDONLY|O_CLOEXEC <unfinished ...>
+158   12:48:37.289245 <... close resumed>) = 0
+157   12:48:37.289292 <... openat resumed>) = 3
+157   12:48:37.289377 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+157   12:48:37.290062 close(3)          = 0
+157   12:48:37.290189 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/liblzma.so.5", O_RDONLY|O_CLOEXEC) = 3
+157   12:48:37.290330 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+158   12:48:37.290452 openat(AT_FDCWD, "/proc/self/maps", O_RDONLY) = 3
+158   12:48:37.290810 read(3, "aaaaadeb0000-aaaaaded6000 r-xp 0"..., 8192) = 2056
+158   12:48:37.291051 read(3, "", 6136) = 0
+158   12:48:37.291376 close(3)          = 0
+157   12:48:37.291676 close(3)          = 0
+157   12:48:37.291874 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libzstd.so.1", O_RDONLY|O_CLOEXEC) = 3
+157   12:48:37.292101 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+158   12:48:37.292360 read(0,  <unfinished ...>
+157   12:48:37.292720 close(3)          = 0
+157   12:48:37.292884 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/liblz4.so.1", O_RDONLY|O_CLOEXEC) = 3
+157   12:48:37.293061 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+157   12:48:37.294077 close(3)          = 0
+157   12:48:37.294319 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libcap.so.2", O_RDONLY|O_CLOEXEC) = 3
+157   12:48:37.294559 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+157   12:48:37.295351 close(3)          = 0
+157   12:48:37.295531 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libgcrypt.so.20", O_RDONLY|O_CLOEXEC) = 3
+157   12:48:37.295709 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+157   12:48:37.296424 close(3)          = 0
+157   12:48:37.296586 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libgpg-error.so.0", O_RDONLY|O_CLOEXEC) = 3
+157   12:48:37.296751 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+157   12:48:37.297421 close(3)          = 0
+157   12:48:37.300833 openat(AT_FDCWD, "/proc/self/auxv", O_RDONLY) = 3
+157   12:48:37.301313 read(3, "!\0\0\0\0\0\0\0\0\320@\260\377\377\0\0003\0\0\0\0\0\0\0p\22\0\0\0\0\0\0"..., 1024) = 336
+157   12:48:37.301505 close(3)          = 0
+157   12:48:37.301782 openat(AT_FDCWD, "/proc/sys/kernel/osrelease", O_RDONLY) = 3
+157   12:48:37.302115 read(3, "6.12.76-linuxkit\n", 1024) = 17
+157   12:48:37.302327 close(3)          = 0
+157   12:48:37.302523 openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 3
+157   12:48:37.302732 read(3, "0-9\n", 1024) = 4
+157   12:48:37.302893 close(3)          = 0
+157   12:48:37.303034 openat(AT_FDCWD, "/proc/self/auxv", O_RDONLY) = 3
+157   12:48:37.303230 read(3, "!\0\0\0\0\0\0\0\0\320@\260\377\377\0\0003\0\0\0\0\0\0\0p\22\0\0\0\0\0\0"..., 1024) = 336
+157   12:48:37.303360 close(3)          = 0
+157   12:48:37.305149 openat(AT_FDCWD, "/proc/self/stat", O_RDONLY) = 3
+157   12:48:37.305359 read(3, "157 (ps) R 156 147 147 0 -1 4194"..., 1024) = 306
+157   12:48:37.305543 close(3)          = 0
+157   12:48:37.306069 openat(AT_FDCWD, "/dev/tty", O_RDONLY|O_NOCTTY|O_NONBLOCK) = -1 ENXIO (No such device or address)
+157   12:48:37.306520 openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 3
+157   12:48:37.306854 read(3, "423.98 4216.62\n", 8191) = 15
+157   12:48:37.307078 openat(AT_FDCWD, "/proc/sys/kernel/pid_max", O_RDONLY) = 4
+157   12:48:37.307243 read(4, "99999\n", 23) = 6
+157   12:48:37.307398 close(4)          = 0
+157   12:48:37.307879 openat(AT_FDCWD, "/proc/sys/kernel/osrelease", O_RDONLY) = 4
+157   12:48:37.308240 read(4, "6.12.76-linuxkit\n", 1024) = 17
+157   12:48:37.308507 close(4)          = 0
+157   12:48:37.308708 openat(AT_FDCWD, "/proc/meminfo", O_RDONLY) = 4
+157   12:48:37.308976 read(4, "MemTotal:        8126672 kB\nMemF"..., 8191) = 1392
+157   12:48:37.309237 openat(AT_FDCWD, "/proc", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+157   12:48:37.309879 openat(AT_FDCWD, "/proc/1/stat", O_RDONLY) = 6
+157   12:48:37.310042 read(6, "1 (tail) S 0 1 1 0 -1 4194560 83"..., 1024) = 291
+157   12:48:37.310190 close(6)          = 0
+157   12:48:37.310368 openat(AT_FDCWD, "/proc/1/status", O_RDONLY) = 6
+157   12:48:37.310548 read(6, "Name:\ttail\nUmask:\t0022\nState:\tS "..., 1024) = 1024
+157   12:48:37.310776 read(6, "d_list:\t0\nvoluntary_ctxt_switche"..., 1024) = 68
+157   12:48:37.310975 close(6)          = 0
+157   12:48:37.311369 close(6)          = 0
+157   12:48:37.311697 close(6)          = 0
+157   12:48:37.312027 openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 6
+157   12:48:37.312279 read(6, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 494
+157   12:48:37.312441 read(6, "", 4096) = 0
+157   12:48:37.312649 close(6)          = 0
+157   12:48:37.312803 openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 6
+157   12:48:37.313094 read(6, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 922
+157   12:48:37.313249 close(6)          = 0
+157   12:48:37.313438 openat(AT_FDCWD, "/proc/1/cmdline", O_RDONLY) = 6
+157   12:48:37.313582 read(6, "tail\0-f\0/dev/null\0", 131072) = 18
+157   12:48:37.313744 read(6, "", 131054) = 0
+157   12:48:37.313866 close(6)          = 0
+157   12:48:37.314114 openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+157   12:48:37.314254 openat(AT_FDCWD, "/proc/stat", O_RDONLY) = 6
+157   12:48:37.314481 read(6, "cpu  936 0 526 421669 144 0 169 "..., 1024) = 662
+157   12:48:37.314647 close(6)          = 0
+157   12:48:37.314912 openat(AT_FDCWD, "/proc/147/stat", O_RDONLY) = 6
+157   12:48:37.315055 read(6, "147 (bash) S 0 147 147 0 -1 4194"..., 2048) = 305
+157   12:48:37.315210 close(6)          = 0
+157   12:48:37.315352 openat(AT_FDCWD, "/proc/147/status", O_RDONLY) = 6
+157   12:48:37.315506 read(6, "Name:\tbash\nUmask:\t0022\nState:\tS "..., 2048) = 1104
+157   12:48:37.315680 close(6)          = 0
+157   12:48:37.315838 openat(AT_FDCWD, "/proc/147/cmdline", O_RDONLY) = 6
+157   12:48:37.315989 read(6, "bash\0-c\0cd /work/q1_pipeline && "..., 131072) = 336
+157   12:48:37.316128 read(6, "", 130736) = 0
+157   12:48:37.316265 close(6)          = 0
+157   12:48:37.316515 openat(AT_FDCWD, "/proc/153/stat", O_RDONLY) = 6
+157   12:48:37.316676 read(6, "153 (strace) S 147 147 147 0 -1 "..., 2048) = 314
+157   12:48:37.316830 close(6)          = 0
+157   12:48:37.316974 openat(AT_FDCWD, "/proc/153/status", O_RDONLY) = 6
+157   12:48:37.317129 read(6, "Name:\tstrace\nUmask:\t0022\nState:\t"..., 2048) = 1109
+157   12:48:37.317299 close(6)          = 0
+157   12:48:37.317440 openat(AT_FDCWD, "/proc/153/cmdline", O_RDONLY) = 6
+157   12:48:37.317590 read(6, "strace\0-f\0-tt\0-e\0trace=process,p"..., 131072) = 185
+157   12:48:37.317780 read(6, "", 130887) = 0
+157   12:48:37.317913 close(6)          = 0
+157   12:48:37.318192 openat(AT_FDCWD, "/proc/156/stat", O_RDONLY) = 6
+157   12:48:37.318390 read(6, "156 (pipeline_ipc) S 153 147 147"..., 2048) = 306
+157   12:48:37.318663 close(6)          = 0
+157   12:48:37.318814 openat(AT_FDCWD, "/proc/156/status", O_RDONLY) = 6
+157   12:48:37.318988 read(6, "Name:\tpipeline_ipc\nUmask:\t0022\nS"..., 2048) = 1116
+157   12:48:37.319271 close(6)          = 0
+157   12:48:37.319456 openat(AT_FDCWD, "/proc/156/cmdline", O_RDONLY) = 6
+157   12:48:37.319655 read(6, "./pipeline_ipc\0root\0/tmp/q1_out."..., 131072) = 36
+157   12:48:37.319905 read(6, "", 131036) = 0
+157   12:48:37.320035 close(6)          = 0
+157   12:48:37.320241 openat(AT_FDCWD, "/proc/157/stat", O_RDONLY) = 6
+157   12:48:37.320339 read(6, "157 (ps) R 156 147 147 0 -1 4194"..., 2048) = 306
+157   12:48:37.320493 close(6)          = 0
+157   12:48:37.320611 openat(AT_FDCWD, "/proc/157/status", O_RDONLY) = 6
+157   12:48:37.320731 read(6, "Name:\tps\nUmask:\t0022\nState:\tR (r"..., 2048) = 1106
+157   12:48:37.320831 close(6)          = 0
+157   12:48:37.320920 openat(AT_FDCWD, "/proc/157/cmdline", O_RDONLY) = 6
+157   12:48:37.321024 read(6, "ps\0aux\0", 131072) = 7
+157   12:48:37.321112 read(6, "", 131065) = 0
+157   12:48:37.321204 close(6)          = 0
+157   12:48:37.321329 openat(AT_FDCWD, "/proc/158/stat", O_RDONLY) = 6
+157   12:48:37.321421 read(6, "158 (grep) S 156 147 147 0 -1 41"..., 2048) = 301
+157   12:48:37.321509 close(6)          = 0
+157   12:48:37.321607 openat(AT_FDCWD, "/proc/158/status", O_RDONLY) = 6
+157   12:48:37.321798 read(6, "Name:\tgrep\nUmask:\t0022\nState:\tS "..., 2048) = 1109
+157   12:48:37.321959 close(6)          = 0
+157   12:48:37.322054 openat(AT_FDCWD, "/proc/158/cmdline", O_RDONLY) = 6
+157   12:48:37.322192 read(6, "grep\0root\0", 131072) = 10
+157   12:48:37.322288 read(6, "", 131062) = 0
+157   12:48:37.322374 close(6)          = 0
+157   12:48:37.322518 close(5)          = 0
+157   12:48:37.322612 write(1, "USER       PID %CPU %MEM    VSZ "..., 1055) = 1055
+158   12:48:37.322707 <... read resumed>"USER       PID %CPU %MEM    VSZ "..., 98304) = 1055
+157   12:48:37.322743 close(1)          = 0
+158   12:48:37.322881 read(0,  <unfinished ...>
+157   12:48:37.322936 close(2 <unfinished ...>
+158   12:48:37.322971 <... read resumed>"", 98304) = 0
+157   12:48:37.323028 <... close resumed>) = 0
+158   12:48:37.323086 write(1, "root         1  0.0  0.0   2260 "..., 982 <unfinished ...>
+157   12:48:37.323168 exit_group(0 <unfinished ...>
+158   12:48:37.323225 <... write resumed>) = 982
+157   12:48:37.323256 <... exit_group resumed>) = ?
+158   12:48:37.323295 close(1)          = 0
+157   12:48:37.323512 +++ exited with 0 +++
+156   12:48:37.323559 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 157
+158   12:48:37.323601 close(2 <unfinished ...>
+156   12:48:37.323632 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=157, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+158   12:48:37.323679 <... close resumed>) = 0
+156   12:48:37.323715 wait4(158,  <unfinished ...>
+158   12:48:37.323746 exit_group(0)     = ?
+158   12:48:37.323909 +++ exited with 0 +++
+156   12:48:37.323958 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 158
+156   12:48:37.324017 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=158, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+156   12:48:37.324177 openat(AT_FDCWD, "/tmp/q1_out.txt", O_RDONLY) = 3
+156   12:48:37.324273 read(3, "root         1  0.0  0.0   2260 "..., 4096) = 982
+156   12:48:37.324362 read(3, "", 4096) = 0
+156   12:48:37.324436 close(3)          = 0
+156   12:48:37.324509 write(1, "[parent] child1 (ps aux)  pid=15"..., 1198) = 1198
+156   12:48:37.324586 exit_group(0)     = ?
+156   12:48:37.324756 +++ exited with 0 +++
