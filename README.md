@@ -182,22 +182,29 @@ that generates reproducible synthetic log files for testing:
 ```bash
 gcc -O2 -o q4_search/gen_testfiles q4_search/gen_testfiles.c
 mkdir -p q4_search/testfiles
-for i in 1 2 3 4 5 6 7 8; do
+for i in $(seq 1 20); do
     ./q4_search/gen_testfiles q4_search/testfiles/log$i.txt $i 60000
 done
 ```
 
-Tested configurations (8 files, ~5 MB each):
+Tested configurations (20 files, ~5 MB / 60,000 lines each, on a 10-core
+container so the three required configurations are genuinely distinct):
 
-| Threads | Meaning | Elapsed (best of 3) |
+| Threads | Meaning | Elapsed (median of 3) |
 |---|---|---|
-| 2 | fixed low-parallelism baseline | ~0.074 s |
-| 8 | "average core count" (container had `nproc`=10, clamped to 8 files) | ~0.024 s |
-| 8 | "max threads" (one thread per file) | ~0.024 s |
+| 2  | fixed low-parallelism baseline | ~0.130 s |
+| 10 | average number of CPU cores (`nproc` = 10) | ~0.038 s |
+| 20 | maximum threads (one thread per file) | ~0.035 s |
+
+Speedup is near-linear up to the physical core count (~3.5× from 2 → 10
+threads) and flat beyond it (20 threads ≈ 10 threads), since threads
+beyond the core count cannot execute in parallel. Per-file counts are
+byte-for-byte identical across all three configurations and match an
+independent `grep -o keyword file | wc -l` check.
 
 Sample outputs: [`q4_search/results_2threads.txt`](q4_search/results_2threads.txt),
 [`q4_search/results_10threads.txt`](q4_search/results_10threads.txt),
-[`q4_search/results_8threads.txt`](q4_search/results_8threads.txt).
+[`q4_search/results_20threads.txt`](q4_search/results_20threads.txt).
 
 ## Report
 

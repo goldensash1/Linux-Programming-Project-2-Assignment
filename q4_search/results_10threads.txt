@@ -1,12 +1,24 @@
-Keyword search results for "error" (threads=8, files=8)
+Keyword search results for "error" (threads=10, files=20)
 --------------------------------------------------------
-testfiles/log7.txt: 120168
-testfiles/log4.txt: 119834
-testfiles/log5.txt: 119974
-testfiles/log3.txt: 120451
-testfiles/log8.txt: 120280
-testfiles/log6.txt: 120492
-testfiles/log2.txt: 120585
-testfiles/log1.txt: 119730
+tf/log3.txt: 120451
+tf/log4.txt: 119834
+tf/log2.txt: 120585
+tf/log5.txt: 119974
+tf/log6.txt: 120492
+tf/log1.txt: 119730
+tf/log9.txt: 120275
+tf/log7.txt: 120168
+tf/log8.txt: 120280
+tf/log10.txt: 120038
+tf/log12.txt: 120635
+tf/log14.txt: 120075
+tf/log15.txt: 119682
+tf/log17.txt: 119981
+tf/log11.txt: 120061
+tf/log18.txt: 119813
+tf/log13.txt: 120459
+tf/log16.txt: 119895
+tf/log19.txt: 119649
+tf/log20.txt: 120102
 --------------------------------------------------------
-Completed in 0.026750 seconds using 8 thread(s)
+Completed in 0.034785 seconds using 10 thread(s)

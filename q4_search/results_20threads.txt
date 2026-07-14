@@ -1,0 +1,24 @@
+Keyword search results for "error" (threads=20, files=20)
+--------------------------------------------------------
+tf/log8.txt: 120280
+tf/log7.txt: 120168
+tf/log2.txt: 120585
+tf/log1.txt: 119730
+tf/log6.txt: 120492
+tf/log5.txt: 119974
+tf/log4.txt: 119834
+tf/log3.txt: 120451
+tf/log14.txt: 120075
+tf/log19.txt: 119649
+tf/log13.txt: 120459
+tf/log9.txt: 120275
+tf/log15.txt: 119682
+tf/log16.txt: 119895
+tf/log11.txt: 120061
+tf/log10.txt: 120038
+tf/log18.txt: 119813
+tf/log12.txt: 120635
+tf/log17.txt: 119981
+tf/log20.txt: 120102
+--------------------------------------------------------
+Completed in 0.034691 seconds using 20 thread(s)
