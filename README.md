@@ -1,4 +1,4 @@
-# Project 2 — Linux Programming: System Calls, strace, and Multithreading
+# Project 2 Linux Programming: System Calls, strace, and Multithreading
 
 This repository contains four C programs demonstrating process creation and
 IPC, low-level vs. buffered file I/O, and POSIX multithreading with
@@ -57,19 +57,19 @@ make q3
 make q4
 ```
 
-## Question 1 — Process creation, `execvp`, and `pipe` IPC
+## Question 1 Process creation, `execvp`, and `pipe` IPC
 
 **Program:** [`q1_pipeline/pipeline_ipc.c`](q1_pipeline/pipeline_ipc.c)
 
 Recreates the shell pipeline `ps aux | grep <keyword>` using two child
 processes connected by a `pipe()`:
 
-* **Child 1** — `dup2`s its stdout onto the pipe's write end and
+* **Child 1**  `dup2`s its stdout onto the pipe's write end and
   `execvp`s `ps aux`.
-* **Child 2** — `dup2`s its stdin onto the pipe's read end, `dup2`s its
+* **Child 2**  `dup2`s its stdin onto the pipe's read end, `dup2`s its
   stdout onto an output file opened with `open(O_WRONLY|O_CREAT|O_TRUNC)`,
   and `execvp`s `grep <keyword>`.
-* **Parent** — closes both pipe ends (critical so child 2 sees EOF once
+* **Parent**  closes both pipe ends (critical so child 2 sees EOF once
   child 1 finishes), `waitpid()`s on both children, then reopens the
   output file with `fopen()` and prints the first 10 lines to the
   terminal.
@@ -92,7 +92,7 @@ The full and filtered traces captured during development are in
 [`strace_logs/q1_strace_filtered.log`](strace_logs/q1_strace_filtered.log).
 A syscall-by-syscall walkthrough is in the report.
 
-## Question 2 — System calls vs. standard I/O for large-file copy
+## Question 2 System calls vs. standard I/O for large-file copy
 
 **Programs:**
 [`q2_filecopy/copy_syscall.c`](q2_filecopy/copy_syscall.c) (low-level
@@ -130,14 +130,14 @@ Captured strace summaries: [`strace_logs/q2_syscall_straceC.log`](strace_logs/q2
 Full numbers, timings across buffer sizes (4 KB / 64 KB / 1 MB), and the
 explanation of *why* the two versions differ are in the report.
 
-## Question 3 — 16-thread prime counter with `pthread_mutex_t`
+## Question 3 16-thread prime counter with `pthread_mutex_t`
 
 **Program:** [`q3_primes/primes_mt.c`](q3_primes/primes_mt.c)
 
 Splits the range `[1, 200000]` into 16 equal contiguous chunks (12,500
 numbers each), spawns one `pthread_t` per chunk, and has each thread count
 primes locally (trial division up to `sqrt(n)`) before acquiring a shared
-`pthread_mutex_t` to add its local count into the global total —
+`pthread_mutex_t` to add its local count into the global total 
 minimizing lock contention since the mutex is only held for one addition
 per thread, not per number.
 
@@ -154,7 +154,7 @@ The synchronized total number of prime numbers between 1 and 200000 is 17984
 (17984 is the correct, independently-verifiable count of primes below
 200,000.)
 
-## Question 4 — Multithreaded keyword search across files
+## Question 4 Multithreaded keyword search across files
 
 **Program:** [`q4_search/search.c`](q4_search/search.c)
 
@@ -173,7 +173,7 @@ The synchronized total number of prime numbers between 1 and 200000 is 17984
   output file are serialized with a second `pthread_mutex_t` so lines from
   different threads never interleave or get lost.
 * If more threads are requested than there are files, the thread count is
-  clamped down to the file count (there is no benefit — and no way — to
+  clamped down to the file count (there is no benefit  and no way  to
   usefully run more workers than there is work).
 
 `gen_testfiles.c` is a small helper (not part of the graded deliverable)
@@ -208,9 +208,9 @@ Sample outputs: [`q4_search/results_2threads.txt`](q4_search/results_2threads.tx
 
 ## Report
 
-The full analytical report — syscall-by-syscall trace analysis for Q1,
+The full analytical report  syscall-by-syscall trace analysis for Q1,
 strace-based performance comparison for Q2, and synchronization/
-performance discussion for Q3 and Q4 — is in
+performance discussion for Q3 and Q4  is in
 [`docs/Project2_Report.docx`](docs/Project2_Report.docx).
 
 ## Environment note
